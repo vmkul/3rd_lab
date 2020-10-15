@@ -1,12 +1,45 @@
 header {
     position: sticky;
     top: 0;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(83, 121, 232, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    background: rgb(76,151,203);
+    background: linear-gradient(90deg, rgba(76,151,203,1) 0%, rgba(66,100,203,1) 49%, rgba(3,30,111,1) 100%);
 }
 
 #header-container {
     display: flex;
+}
+
+#filter-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+.filter-button {
+    background-color: transparent;
+    color: rgb(0, 30, 80);
+    padding: 7px 16px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#filter-change {
+    border: none;
+    color: white;
+    background: #181851;
+}
+
+#filter-change:hover {
+    color: #39c0e9;
+}
+
+.filter-button:hover {
+    color: #39c0e9;
 }
 
 #logo {
@@ -144,6 +177,34 @@ hr {
     height: 25px;
 }
 
+.additional-info {
+    background-image: radial-gradient(73.77% 73.77% at -22.31% -20.58%, rgb(0, 67, 122) 0%, rgb(0, 30, 80) 100%);
+    width: 100%;
+    font-size: 2.6em;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-title {
+    font-size: 1em;
+}
+
+.small-info {
+    font-size: 0.5em;
+}
+
+.very-small-info {
+    font-size: 0.4em;
+}
+
+.phone-number {
+    font-size: 1.1em;
+}
+
 footer {
     margin-left: 7%;
     margin-right: 7%;
@@ -178,5 +239,9 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+h1 b {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
