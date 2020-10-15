@@ -17,13 +17,18 @@ for (const item of productItems) {
   });
 }
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    logo.style.opacity = '0';
+let offset = 0;
+
+const logoCb = () => {
+  if (offset < 8) {
+    logo.style.bottom = `${offset++}px`;
   } else {
-    logo.style.opacity = '1';
+    offset = 0;
+    logo.style.bottom = `${offset--}px`;
   }
-});
+};
+
+setInterval(logoCb, 100);
 
 menuButton.onclick = () => {
   menuContainer.style.right = '0';
