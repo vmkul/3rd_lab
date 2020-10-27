@@ -1,5 +1,4 @@
 const productItems = document.getElementsByClassName('product-item');
-const logo = document.getElementById('logo');
 const menuContainer = document.getElementById('menu-container');
 const menuButton = document.getElementById('menu-button');
 const closeButton = document.getElementById('close-button');
@@ -21,20 +20,6 @@ for (const item of productItems) {
     image.style.width = '100%';
   });
 }
-
-let offset = 1;
-
-const logoCb = () => {
-  if (offset === 1) {
-    offset = 0;
-    logo.style.bottom = '6px';
-  } else {
-    offset = 1;
-    logo.style.bottom = '0';
-  }
-};
-
-setInterval(logoCb, 400);
 
 menuButton.onclick = () => {
   menuContainer.style.right = '0';

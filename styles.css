@@ -5,6 +5,7 @@ header {
     width: 100%;
     background: rgb(76,151,203);
     background: linear-gradient(90deg, rgba(76,151,203,1) 0%, rgba(66,100,203,1) 49%, rgba(3,30,111,1) 100%);
+    height: 70px;
 }
 
 #header-container {
@@ -42,13 +43,18 @@ header {
     color: #39c0e9;
 }
 
+@keyframes logo-anim {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
+}
+
 #logo {
     width: 80px;
     height: 80px;
-    padding-left: calc(50% - 40px);
-    bottom: 0;
-    transition-duration: 0.4s;
+    margin-left: calc(50% - 40px);
+    top: 0;
     position: absolute;
+    animation: logo-anim 1s alternate-reverse infinite;
 }
 
 #logo-container {
